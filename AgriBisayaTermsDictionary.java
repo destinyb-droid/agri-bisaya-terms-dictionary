@@ -241,12 +241,12 @@ public class AgriBisayaTermsDictionary {
                         }
                     }
                 }
-            }
-            //quincie Rojas
-            if (!found) {
+                //quincie Rojas
+                if (!found) {
                 System.out.println("Wala pa na dria nabutang bay.,. Salamat ha!");
                 retryMessage();
-            }
+              }
+        }
             System.out.print("Search again? (yes/no): ");
             choice = input.nextLine();
             System.out.println();
