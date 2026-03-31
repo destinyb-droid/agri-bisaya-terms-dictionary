@@ -241,7 +241,6 @@ public class AgriBisayaTermsDictionary {
                         }
                     }
                 }
-                //quincie Rojas
                 if (!found) {
                 System.out.println("Wala pa na dria nabutang bay.,. Salamat ha!");
                 retryMessage();
