@@ -7,8 +7,8 @@ public class AgriBisayaTermsDictionary {
 
             "Balsa: Gina guyod sa karabaw hakotanan sa mga na harvest",
             "Sako: Butangan sa na harvest",
-            "Irigasyon (noun): Sistema sa paghatag og tubig sa tanom",
-            "Peste (noun): Mga insekto nga makadaot sa tanom",
+            "Irigasyon: (noun)Sistema sa paghatag og tubig sa tanom",
+            "Peste: (noun) Mga insekto nga makadaot sa tanom",
             "Hakot: Pagdala sa ani gikan sa uma",
             "Kamalig: Bodega o tig-imbakan sa ani",
             "Binhi: Liso nga itanom",
@@ -20,13 +20,13 @@ public class AgriBisayaTermsDictionary {
             "ugat: parte sa tanom nga naa sa ilawom sa yuta, mosuyop ug sustansya",
             "bunga: resulta sa tanom, mao na ang kasagaran anihon o kan-on",
             "yuta: kung asa itanom ang mga tanom",
-            "Pestisidyo (noun): kemikal nga mopatay sa peste",
+            "Pestisidyo: (noun) kemikal nga mopatay sa peste",
             "sanga: mga parte nga nagagikan sa tangkay, nagaalalay sa dahon, bulak, ug bunga",
             "Gamas: pagputol sa hinog nga tanom sama sa humay",
-            "Daro (noun): gamit sa pagbungkal sa yuta",
-            "Daro (verb): proseso sa pag-andam sa yuta para tamnan.",
-            "Binhi (noun): liso nga itanom.",
-            "Ani (noun): bunga o resulta sa tanom.",
+            "Daro: (noun) gamit sa pagbungkal sa yuta",
+            "Daro: (verb) proseso sa pag-andam sa yuta para tamnan.",
+            "Binhi: (noun) liso nga itanom.",
+            "Ani: (noun) bunga o resulta sa tanom.",
             "Sagbot: tanom nga makadaot sa uma",
             "Panglimpyo: (noun)  pagtangtang sa mga damo ug hugaw sa uma.",
             "Panglimpyo: (verb) pagtangtang sa mga dili kinahanglanon nga mga tanom ug hugaw.",
@@ -85,9 +85,8 @@ public class AgriBisayaTermsDictionary {
 
     // Destiny D. Bicoy
     // method counts how many characters the user entered
-    public static void countCharacters(String input) {
-        int length = input.length();
-        System.out.println("Number of characters: " + length);
+    public static int countCharacters(String input) {
+        return input.length();
     }
 
     // Noreen Sincero
@@ -182,13 +181,13 @@ public class AgriBisayaTermsDictionary {
         while (choice.equalsIgnoreCase("yes")) {
             System.out.print("Enter Bisaya Agriculture Term: ");
             String term = input.nextLine();
-            System.out.println("==============================\n");
-            System.out.println("\n--- Input Analysis ---");
+            System.out.println("=======================================\n");
+            System.out.println("\n----------- Input Analysis ----------");
             System.out.println(checkFirstLetterType(term));
-            countCharacters(term);
+            System.out.println("Number of characters: " + countCharacters(term));
             System.out.println("Reversed input: " + reverseInput(term));
             System.out.println("Letter 'a' appears: " + countLetter(term, 'a'));
-            System.out.println("----------------------\n");
+            System.out.println("---------------------------------------\n");
 
 
             // Call feedbackMethod to validate the input
