@@ -62,13 +62,13 @@ public class AgriBisayaTermsDictionary {
             "Ilang-ilang: tanom nga ginagamit sa panghalad o decorative purposes",
             "Tangkahan: lugar sa fishpond para sa pagpananom sa isda"
     };
-
-    // chloey magbutay
+    
+     // chloey magbutay
     // prompt retry
-    public static void retryMessage() {
-        System.out.println("Palihug sulayi og usab.");
-    }
-
+    public static String retryMessage() {
+        return "Palihug sulayi og usab.";
+    }    
+    
     //reysel andos
     // method to check if input is all uppercase/lowercase letters
     public static boolean isUpperCaseLowerCaseOnly(String input) {
