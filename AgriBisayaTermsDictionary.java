@@ -65,9 +65,11 @@ public class AgriBisayaTermsDictionary {
 
     // chloey magbutay
     // prompt retry
-    public static void retryMessage() {
-        System.out.println("Palihug sulayi og usab.");
-    }
+    public static string retryMessage() {
+        return "Palihug sulayi og usab.";
+    }    
+        System.out.println( retryMessage());
+    
 
     //reysel andos
     // method to check if input is all uppercase/lowercase letters
