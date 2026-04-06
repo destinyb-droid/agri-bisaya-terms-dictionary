@@ -244,6 +244,7 @@ public class AgriBisayaTermsDictionary {
                 if (!found) {
                 System.out.println("Wala pa na dria nabutang bay.,. Salamat ha!");
                 retryMessage();
+                    System.out.println("Palihog sulayi ug usab");
               }
         }
             System.out.print("Search again? (yes/no): ");
